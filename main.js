@@ -1,7 +1,9 @@
-let text = "This is, JS learning function";
+let myText = "Big fox love the small fox and small FOX do not love big FOX";
 
-let newText = text.split('|');
+let searchKey = 'love';
 
-console.log(newText);
+let result = myText.search(searchKey);
+
+console.log(result);
 
 
