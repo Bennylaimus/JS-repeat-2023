@@ -1,14 +1,14 @@
 // forEach
 // map
 // filter
-
-// ==========================
-
 // concat
 // find
 // findIndex
 // indexOf
 // lastIndexOf
+
+// ==========================
+
 // some
 // every
 // includes
@@ -35,14 +35,12 @@
 // flat
 // flatMap
 
-let food = ['Banana', 'Potato', 'Carrot', 'Orange', 'Kiwi', 'Apple', 'Melon'];
+let food = ['Banana', 'Potato', 'Carrot', 'Orange', 'Kiwi', 'Potato', 'Apple', 'Melon', 'Apple'];
 
-const filtredFood = food.filter((item) => {
-    if (item.length !== 6) {
-        return item
-    }
-});
+let testTwo = ['word', 'bag', 'arrow', 44, 55, 121, 'comp', 88, 'arrow'];
 
-console.log(filtredFood);
+let filtered = food.lastIndexOf('Apple');
 
-https://www.youtube.com/watch?v=RVxuGCWZ_8E&t=171s
+console.log(filtered);
+
+// https://www.youtube.com/watch?v=RVxuGCWZ_8E&t=171s
