@@ -6,9 +6,6 @@
 // findIndex
 // indexOf
 // lastIndexOf
-
-// ==========================
-
 // some
 // every
 // includes
@@ -22,6 +19,9 @@
 // copyWithin
 // slice
 // splice
+
+// ==========================
+
 // sort
 // reverse
 // from
@@ -35,12 +35,11 @@
 // flat
 // flatMap
 
-let food = ['Banana', 'Potato', 'Carrot', 'Orange', 'Kiwi', 'Potato', 'Apple', 'Melon', 'Apple'];
+let food = ['Cucumber', 'Potato', 'Carrot', 'Orange', 'Kiwi', 'Potato', 'Apple', 'Melon'];
 
-let testTwo = ['word', 'bag', 'arrow', 44, 55, 121, 'comp', 88, 'arrow'];
+let slicedArr = food.splice(2, 2, 'Car', 'Milk', 'Dog', 'Cat');
 
-let filtered = food.lastIndexOf('Apple');
-
-console.log(filtered);
+console.log(slicedArr);
+console.log(food);
 
 // https://www.youtube.com/watch?v=RVxuGCWZ_8E&t=171s
