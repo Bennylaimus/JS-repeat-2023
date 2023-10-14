@@ -19,9 +19,6 @@
 // copyWithin
 // slice
 // splice
-
-// ==========================
-
 // sort
 // reverse
 // from
@@ -35,11 +32,19 @@
 // flat
 // flatMap
 
+// ==========================
+
 let food = ['Cucumber', 'Potato', 'Carrot', 'Orange', 'Kiwi', 'Potato', 'Apple', 'Melon'];
 
-let slicedArr = food.splice(2, 2, 'Car', 'Milk', 'Dog', 'Cat');
+const numbers = [1, 2, 3, 5, 80, 90, 33, 35];
 
-console.log(slicedArr);
-console.log(food);
+const multiDemArr = [1, 2, 3, [4, 5, [6, [7]]]];
+
+let flatted = multiDemArr.flatMap((element) => {
+    return element[0] + element[0]
+});
+
+console.log(flatted);
+
 
 // https://www.youtube.com/watch?v=RVxuGCWZ_8E&t=171s
