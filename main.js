@@ -129,16 +129,65 @@
 
 // console.log(user);
 
-let schedule = {
-    name: 'Pete',
+// let schedule = {};
+
+// console.log(schedule);
+
+// function isEmpty(object) {
+//     if (object.property === 'undefined') {
+//         return true
+//     } false
+// };
+
+// console.log(isEmpty(schedule));
+
+let salaries = {
+    Pete: 300,
+    Ann: 500,
+    Ingrid: 600,
 };
 
-function isEmpty(objectName) {
-    for (let key in objectName) {
-        if (objectName[key] === 'undefined') {
-            return true
-        } false
-    }
-}
+let sum = 0;
+for (let salary in salaries) {
+    sum += salaries[salary];
+};
 
-console.log(isEmpty(schedule));
+console.log(sum);
+
+// let menu = {
+//     width: 200,
+//     height: 400,
+//     title: "My menu",
+// };
+
+// function check(object) {
+//     for (let value in object) {
+//         if (typeof object[value] === 'number') {
+//             object[value] = object[value] * 2
+//         }
+//     }
+// };
+
+// check(menu);
+
+// console.log(menu);
+
+// let superUser = {
+//     name: 'Andrew',
+//     nameTwo: 'Yury',
+// };
+
+// // let check = Object.keys(superUser).length;
+// // console.log(check);
+
+// function isEmpty(object) {
+//     if (Object.keys(object).length === 0) {
+//         return true
+//     } else {
+//         return false
+//     }
+// };
+
+// console.log(isEmpty(superUser));
+
+
