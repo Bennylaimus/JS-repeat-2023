@@ -141,18 +141,18 @@
 
 // console.log(isEmpty(schedule));
 
-let salaries = {
-    Pete: 300,
-    Ann: 500,
-    Ingrid: 600,
-};
+// let salaries = {
+//     Pete: 300,
+//     Ann: 500,
+//     Ingrid: 600,
+// };
 
-let sum = 0;
-for (let salary in salaries) {
-    sum += salaries[salary];
-};
+// let sum = 0;
+// for (let salary in salaries) {
+//     sum += salaries[salary];
+// };
 
-console.log(sum);
+// console.log(sum);
 
 // let menu = {
 //     width: 200,
@@ -190,4 +190,69 @@ console.log(sum);
 
 // console.log(isEmpty(superUser));
 
+// let newUser = {
+//     name: 'John',
+//     age: 30,
+// };
+
+// console.log(newUser);
+
+// let userClone = {};
+
+// for (let property in newUser) {
+//     userClone[property] = newUser[property];
+//     console.log(userClone[property]);
+// };
+
+// console.log(userClone);
+
+// let objOne = {};
+
+// let ObjTwo = {
+//     name: 'Andrew',
+//     age: 50,
+// };
+
+// let ObjThree = {
+//     lastName: 'Yuri',
+//     isAdmin: true,
+// };
+
+// console.log(Object.assign(objOne, ObjTwo, ObjThree));
+
+// const realObj = {
+//     name: 'Andrew',
+//     age: 40,
+//     isAdmin: true,
+// };
+
+// const cloneObj = Object.assign({}, realObj);
+
+// console.log(realObj);
+// console.log(cloneObj);
+
+// realObj.name = 'Yuri';
+// console.log(realObj);
+
+// cloneObj.isAdmin = false;
+// console.log(cloneObj);
+
+let user = {
+    name: 'Andrew',
+    age: 30,
+    isAdmin: true,
+    address: {
+        street: 'Kronvalda street 1-2',
+        zip: 'LV2150',
+        city: 'Sigulda',
+        contry: 'Latvia',
+    },
+    car: 'BWN',
+};
+
+console.log(user.address.city);
+
+let cloneObject = structuredClone(user);
+
+console.log(cloneObject);
 
