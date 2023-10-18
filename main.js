@@ -237,22 +237,68 @@
 // cloneObj.isAdmin = false;
 // console.log(cloneObj);
 
-let user = {
-    name: 'Andrew',
-    age: 30,
-    isAdmin: true,
-    address: {
-        street: 'Kronvalda street 1-2',
-        zip: 'LV2150',
-        city: 'Sigulda',
-        contry: 'Latvia',
-    },
-    car: 'BWN',
+// let user = {
+//     name: 'Andrew',
+//     age: 30,
+//     isAdmin: true,
+//     address: {
+//         street: 'Kronvalda street 1-2',
+//         zip: 'LV2150',
+//         city: 'Sigulda',
+//         contry: 'Latvia',
+//     },
+//     car: 'BWN',
+// };
+
+// console.log(user.address.city);
+
+// let cloneObject = structuredClone(user);
+
+// console.log(cloneObject);
+
+// let ourUser = {
+//     name: 'Andrew',
+//     age: 30,
+//     isAdmin: true,
+//     saysHello() {
+//         console.log(`Oh, hello there ${this.name}`);
+//     }
+// };
+
+// // ourUser.saysHello = function () {
+// //     console.log('Hello, everyone!');
+// // };
+
+// console.log(ourUser);
+
+// ourUser.saysHello();
+
+// function makeUser() {
+//     return {
+//         name: 'John',
+//         ref: this
+//     };
+// }
+
+// let user = makeUser();
+
+// // console.log(user);
+
+// // makeUser();
+
+// console.log(user.ref.name);
+
+let calculator = {
+    read()
 };
 
-console.log(user.address.city);
 
-let cloneObject = structuredClone(user);
+function read() {
+    let sum1 = parseInt(prompt('Enter first number'));
+    let sum2 = parseInt(prompt('Enter second number'));
+    return sum1, sum2
+};
+calculator.read = read();
+read();
 
-console.log(cloneObject);
-
+console.log(calculator);
