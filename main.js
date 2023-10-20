@@ -289,16 +289,20 @@
 // console.log(user.ref.name);
 
 let calculator = {
-    read()
+    num1: 0,
+    num2: 0,
+    read() {
+        this.num1 = parseInt(prompt('Enter your first number'));
+        this.num2 = parseInt(prompt('Enter your second number'));
+    },
+    sum() {
+        alert(this.num1 + this.num2);
+    },
+    multiply() {
+        alert(this.num1 * this.num2);
+    },
 };
 
-
-function read() {
-    let sum1 = parseInt(prompt('Enter first number'));
-    let sum2 = parseInt(prompt('Enter second number'));
-    return sum1, sum2
-};
-calculator.read = read();
-read();
-
-console.log(calculator);
+calculator.read();
+calculator.sum();
+calculator.multiply();
