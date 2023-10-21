@@ -288,21 +288,113 @@
 
 // console.log(user.ref.name);
 
-let calculator = {
-    num1: 0,
-    num2: 0,
-    read() {
-        this.num1 = parseInt(prompt('Enter your first number'));
-        this.num2 = parseInt(prompt('Enter your second number'));
-    },
-    sum() {
-        alert(this.num1 + this.num2);
-    },
-    multiply() {
-        alert(this.num1 * this.num2);
-    },
+// let calculator = {
+//     num1: 0,
+//     num2: 0,
+//     read() {
+//         this.num1 = parseInt(prompt('Enter your first number'));
+//         this.num2 = parseInt(prompt('Enter your second number'));
+//     },
+//     sum() {
+//         alert(this.num1 + this.num2);
+//     },
+//     multiply() {
+//         alert(this.num1 * this.num2);
+//     },
+// };
+
+// calculator.read();
+// calculator.sum();
+// calculator.multiply();
+
+// let ladder = {
+//     step: 0,
+//     up() {
+//         this.step++;
+//         return this;
+//     },
+//     down() {
+//         this.step--;
+//         return this;
+//     },
+//     showStep: function () {
+//         alert(this.step);
+//         return this;
+//     },
+// };
+
+// // ladder.up();
+// // ladder.up();
+// // ladder.down();
+// // ladder.showStep();
+// // ladder.down();
+// // ladder.showStep();
+
+// ladder.up().up().down().showStep().down().showStep();
+
+// function User(name) {
+//     this.name = name;
+//     this.age = 30;
+//     this.status = 'isAdmin';
+// };
+
+// let user = new User('Pete');
+
+// console.log(user.name);
+// console.log(user.age);
+// console.log(user.status);
+
+// this = {}
+
+// this.name = 'Pete';
+// this.age = 30;
+// this.status = 'isAdmin';
+
+// return this (a 'this' это user{});
+
+// let user = new function () {
+//     this.name = 'Andrew';
+//     this.age = 50;
+//     this.status = 'notAdmin';
+// };
+
+// console.log(user.name);
+// console.log(user.age);
+// console.log(user.status);
+
+// function One(name) {
+//     this.name = name;
+//     this.status = 'isAdmin';
+//     return new Two('Pete');
+// };
+
+// function Two(name) {
+//     this.name = name;
+//     this.status = 'notAdmin';
+// };
+
+// let userOne = new One('John');
+// let userTwo = new Two('Pete');
+
+// console.log(userOne);
+// console.log(userTwo);
+
+// console.log(userOne == userTwo); // false
+
+let myObject = {
+    name: 'huj',
+    age: 30,
 };
 
-calculator.read();
-calculator.sum();
-calculator.multiply();
+function UserOne() {
+    return myObject;
+};
+
+function UserTwo() {
+    return myObject;
+}
+
+let user1 = new UserOne();
+let user2 = new UserTwo();
+
+console.log(user1 == user2); // true
