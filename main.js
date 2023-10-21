@@ -381,20 +381,73 @@
 
 // console.log(userOne == userTwo); // false
 
-let myObject = {
-    name: 'huj',
-    age: 30,
-};
+// let myObject = {
+//     name: 'huj',
+//     age: 30,
+// };
 
-function UserOne() {
-    return myObject;
-};
+// function UserOne() {
+//     return myObject;
+// };
 
-function UserTwo() {
-    return myObject;
-}
+// function UserTwo() {
+//     return myObject;
+// }
 
-let user1 = new UserOne();
-let user2 = new UserTwo();
+// let user1 = new UserOne();
+// let user2 = new UserTwo();
 
-console.log(user1 == user2); // true
+// console.log(user1 == user2); // true
+
+// function Calculator() {
+//     this.num1 = 0;
+//     this.num2 = 0;
+//     this.read = function () {
+//         num1 = +prompt('Enter first number');
+//         num2 = +prompt('Enter second number');
+//     };
+//     this.sum = function () {
+//         alert('Sum = ' + (num1 + num2));
+//     };
+//     this.multiply = function () {
+//         alert('Multiply = ' + num1 * num2);
+//     };
+// };
+
+// let calculator = new Calculator();
+
+// calculator.read();
+// calculator.sum();
+// calculator.multiply();
+
+// function Accumulator(firstNumber) {
+//     this.startingValue = firstNumber; // accumulator.startingValue = 20;
+//     this.addingFirstValue = 0;
+//     this.addingSecondValue = 0;
+//     this.firtsAdd = function () {
+//         this.addingFirstValue = +prompt('How much you want to add?');
+//     };
+//     this.secondAdd = function () {
+//         this.addingSecondValue = +prompt('How much you want to add?');
+//         alert(this.startingValue + this.addingFirstValue + this.addingSecondValue);
+//     };
+// };
+
+// let accumulator = new Accumulator(20);
+
+// accumulator.firtsAdd();
+// accumulator.secondAdd();
+//===============================================================
+
+// function Accumulator(startingValue) {
+//     this.value = startingValue;
+
+//     this.read = function () {
+//         this.value += +prompt('Сколько нужно добавить?', 0);
+//     };
+// };
+
+// let accumulator = new Accumulator(1);
+// accumulator.read();
+// accumulator.read();
+// alert(accumulator.value);
