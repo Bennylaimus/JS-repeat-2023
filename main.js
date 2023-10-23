@@ -451,3 +451,50 @@
 // accumulator.read();
 // accumulator.read();
 // alert(accumulator.value);
+
+//// Symbols //// =============================================
+
+// let userId = Symbol('id'); // создаём новый символ
+
+// let uniqUser1 = Symbol('id');
+// let uniqUser2 = Symbol('id');
+
+// console.log(uniqUser1 == uniqUser2); // false
+
+// // alert(userId); // Error!
+
+// // alert(userId.toString()); // convert Symbol to 'string' so no Erro anymore!
+
+// alert(userId.description); // 'id'
+
+// let myUser = {
+//     name: 'Pete',
+//     age: 20,
+// };
+
+// let userId = Symbol('id'); // создаём символ
+// myUser[userId] = 'FBC281'; // к объекту myUser добааляем символ и указываем чему он равен
+
+// console.log(myUser[userId]); // output: 'FBC281' (видим только через [] , не через .)
+
+// function createGameBoard() {
+//     let A = Symbol('A');
+//     let B = Symbol('B');
+//     let C = Symbol('C');
+//     let gameBoard = {
+//         1: [A],
+//         2: [B],
+//         3: [C],
+//     };
+//     let N = +prompt('Value = ', 0);
+//     for (let x = 1; x <= N; x++) {
+//         console.log(gameBoard[x]);
+//     };
+// };
+
+// createGameBoard();
+
+
+
+
+
