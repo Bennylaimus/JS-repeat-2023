@@ -494,6 +494,29 @@
 
 // createGameBoard();
 
+// let clients = {
+//     name: 'Egor',
+//     surname: 'Makarov',
+//     spentMoney: 300,
+//     salary: 1000,
+//     toString() {
+//         return `name: ${this.name}`;
+//     },
+//     valueOf() {
+//         return this.salary;
+//     },
+//     reminder() {
+//         return (this.salary - this.spentMoney);
+//     },
+// };
+
+// alert(clients);
+
+// [Symbol.toPrimitive](hint){
+//     alert(`hint: ${this.name}`);
+//     return hint == 'string' ? `name: ${this.name}` : this.spentMoney;
+// };
+
 
 
 
