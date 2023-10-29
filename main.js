@@ -518,6 +518,112 @@
 // };
 
 
+// let range = {
+//     from: 1,
+//     to: 5,
+// };
+
+// for (let number of range) { // <=== will not work for now, as we didn't add [Symbol.iterator]
+//     console.log(number);
+// };
+
+// let range = {
+//     from: 1,
+//     to: 5,
+// };
+
+// range[Symbol.iterator] = function () {
+//     return {
+//         current: this.from,
+//         last: this.to,
+//         next() {
+//             if (this.current <= this.last) {
+//                 return { done: false, value: this.current++ }
+//             } else {
+//                 return { done: true };
+//             };
+//         },
+//     };
+// };
+
+// for (let number of range) {
+//     console.log(number);
+// };
+
+// Another approach:
+
+// let range = {
+//     from: 1,
+//     to: 5,
+
+//     [Symbol.iterator]() {
+//         this.current = this.from;
+//         return this; // returning 'updated' range object
+//     },
+
+//     next() {
+//         if (this.current <= this.to) {
+//             return { done: false, value: this.current++ }
+//         } else {
+//             return { done: true };
+//         }
+//     }
+
+// };
+
+// for (let number of range) {
+//     console.log(number);
+// };
+
+// let myStr = 'testing';
+
+// for (let character of myStr) {
+//     console.log(character);
+// };
+
+// Перебираем СТРОКУ (также, как и объект при помощи [Symbol.iterator]);
+// Без for(let ... of ...);
+
+let testString = 'Hello'; // testString is a STRING!
+
+let iterator = testString[Symbol.iterator](); // creating an 'iterator' OBJECT!
+// Как мы поместили 'string' testString в объект 'iterator'?
+// И как мы ещё побавили в объект 'iterator' символ [Symbol.iterator];
+// На самом деле при помощи синтаксиса testString[Symbol.iterator], мы просто добавили в объект 'iterator'
+// ключ 'testString' и его value (или метод?) [Symbol.iterator] (всё равно что testString.[Symbol.iterator])
+
+// let result = iterator.next();
+
+// console.log(result);
+
+// while (true) {
+//     let result = iterator.next(); // добавляем метод объекта next(), который в себе по умолчанию содержит 'done' (который (true или false) и value
+//     if (result.done) break;
+//     console.log(result.value);
+// };
+
+let user = 'John';
+
+let dataBase = user[sayHi]();
+
+console.log(dataBase);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
