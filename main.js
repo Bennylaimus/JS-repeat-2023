@@ -517,7 +517,6 @@
 //     return hint == 'string' ? `name: ${this.name}` : this.spentMoney;
 // };
 
-
 // let range = {
 //     from: 1,
 //     to: 5,
@@ -584,17 +583,9 @@
 // Перебираем СТРОКУ (также, как и объект при помощи [Symbol.iterator]);
 // Без for(let ... of ...);
 
-let testString = 'Hello'; // testString is a STRING!
+// let testString = 'Hello'; // testString is a STRING!
 
-let iterator = testString[Symbol.iterator](); // creating an 'iterator' OBJECT!
-// Как мы поместили 'string' testString в объект 'iterator'?
-// И как мы ещё побавили в объект 'iterator' символ [Symbol.iterator];
-// На самом деле при помощи синтаксиса testString[Symbol.iterator], мы просто добавили в объект 'iterator'
-// ключ 'testString' и его value (или метод?) [Symbol.iterator] (всё равно что testString.[Symbol.iterator])
-
-// let result = iterator.next();
-
-// console.log(result);
+// let iterator = testString[Symbol.iterator](); // creating an 'iterator' OBJECT!
 
 // while (true) {
 //     let result = iterator.next(); // добавляем метод объекта next(), который в себе по умолчанию содержит 'done' (который (true или false) и value
@@ -602,12 +593,14 @@ let iterator = testString[Symbol.iterator](); // creating an 'iterator' OBJECT!
 //     console.log(result.value);
 // };
 
-let user = 'John';
+// let arrayLike = {
+//     1: 'Hello',
+//     2: 'World',
+// };
 
-let dataBase = user[sayHi]();
+// let arr = Array.from(arrayLike);
 
-console.log(dataBase);
-
+// console.log(arr);
 
 
 
